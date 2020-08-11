@@ -40,12 +40,19 @@
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#project3">Project 3</a>
           </li>
-            <li class="nav-item">
+          <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#project4">Project 4</a>
           </li>
-            <li class="nav-item">
+          <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#project5">Project 5</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#project6">Project 6</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#project7">Project 7</a>
+          </li>
+
         </ul>
       </div>
     </div>
@@ -97,20 +104,58 @@
       </div>
     </div>
   </section>
+
   <section id="project3" class="bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>Distributed Key Value Store REST API</h2>
+          <ul>
+            <li>Created a user specified number of replicas using docker containers 
+            <li>Data was sharded equally across replicas 
+             <ul> 
+            <li>Developed dynamic resharding mechianism to ensure all shards are distributed equally across at least two replicas</li>
+            </ul>
+            <li>Used vector clocks to ensure casual consitancy</li>
+          </ul>
+
+          <a href="https://github.com/cyruskarsan/CSE138_Assignment4" target="_blank">
+            <i class="fa fa-github" style="font-size:48px;color:black"></i>
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="project4" >
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>Multithreaded HTTP server with logging</h2>
+          <ul>
+            <li>Created a Multi-threaded HTTP server in C capable of handling thousands of requests concurrently. </li>
+            <li>Used semaphores to log all requests to a single file, concurrently, without overriding previous entries increasing throughput of entries substantially. </li>
+            <li>Utilized C socket programming and the pthread library to implement multithreading. </li>
+          </ul>
+
+          <a href="https://github.com/cyruskarsan/multi_httpserver" target="_blank">
+            <i class="fa fa-github" style="font-size:48px;color:black"></i>
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="project5" class="bg-light">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
           <h2>Profanity Checker API</h2>
 
           <p class="lead">Designed and wrote a RESTful API, in Python, which utilized an SQL database to search for inappropriate words and phrases. This project used a python package in addition to the SQL database to search for profane words in a JSON file. The SQL database is able to be modified using HTTP requests and the profanity check is executed by a POST request.
-
-
           </p>
-          
-          <!-- <ul>
-            <li>This is an example of a bullet point if u need it</li>
-          </ul> -->
 
           <a href="https://github.com/cyruskarsan/ProfanityCheck" target="_blank">
             <i class="fa fa-github" style="font-size:48px;color:black"></i>
@@ -123,7 +168,7 @@
 
   
 
-  <section id="project4" class="bg-light">
+  <section id="project6">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
@@ -144,7 +189,7 @@
   
 
 
-  <section id="project5">
+  <section id="project7"  class="bg-light">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
