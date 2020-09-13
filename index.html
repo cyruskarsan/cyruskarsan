@@ -49,10 +49,6 @@
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#project6">Project 6</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#project7">Project 7</a>
-          </li>
-
         </ul>
       </div>
     </div>
@@ -82,16 +78,14 @@
           		<li>Hypthesized that the <a href="http://archive.ics.uci.edu/ml/datasets/Adult" target="_blank">popular census adult dataset</a> underpresented women and minorites.</li> 
           		<li>Using Google's tensorflow API, we trained a model to test our hypothesis. </li> 
           		<li>Using accuracy and error as metrics, we learned that this dataset, which is supposed to represent the world population, consists of mostly white men which caused it to predict that minorities will make less than <50k a year over 80% of the time. </li>
-
+          	</ul>
           <a href="https://github.com/cyruskarsan/146finalproject" target="_blank">
             <i class="fa fa-github" style="font-size:48px;color:red"></i>
           </a>
-
         </div>
         <div class="column">
         	<img src='CSE146Poster.jpg' style="width:375px;height:500px;"/>
         </div>
-
       </div>
     </div>
   </section>
@@ -123,19 +117,18 @@
             <li>Created a user specified number of replicas using docker containers 
             <li>Data was sharded equally across replicas 
              <ul> 
-            <li>Developed dynamic resharding mechianism to ensure all shards are distributed equally across at least two replicas</li>
+            <li>Developed dynamic resharding mechanism to ensure all shards are distributed equally across at least two replicas</li>
             </ul>
             <li>Used vector clocks to ensure casual consitancy</li>
           </ul>
-
           <a href="https://github.com/cyruskarsan/CSE138_Assignment4" target="_blank">
             <i class="fa fa-github" style="font-size:48px;color:black"></i>
           </a>
-
         </div>
       </div>
     </div>
   </section>
+
 
   <section id="project4" class="bg-light">
     <div class="container">
@@ -147,29 +140,9 @@
             <li>Used semaphores to log all requests to a single file, concurrently, without overriding previous entries increasing throughput of entries substantially. </li>
             <li>Utilized C socket programming and the pthread library to implement multithreading. </li>
           </ul>
-
           <a href="https://github.com/cyruskarsan/multi_httpserver" target="_blank">
             <i class="fa fa-github" style="font-size:48px;color:black"></i>
           </a>
-
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="project5">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <h2>Profanity Checker API</h2>
-
-          <p class="lead">Designed and wrote a RESTful API, in Python, which utilized an SQL database to search for inappropriate words and phrases. This project used a python package in addition to the SQL database to search for profane words in a JSON file. The SQL database is able to be modified using HTTP requests and the profanity check is executed by a POST request.
-          </p>
-
-          <a href="https://github.com/cyruskarsan/ProfanityCheck" target="_blank">
-            <i class="fa fa-github" style="font-size:48px;color:black"></i>
-          </a>
-
         </div>
       </div>
     </div>
@@ -177,17 +150,21 @@
 
   
 
-  <section id="project6" class="bg-light">
+  <section id="project5">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
           <h2>Voice Activated Waste Sorter</h2>
-          <p class="lead">During Cruzhacks, my team and I created a voice activated waste sorter. We used a button connected to Arduino to trigger a Python app to record audio. The audio is parsed using Google Cloud’s speech API, and then compared to our database of items hosted on Microsoft Azure. When a decision is made, the python app sends a serial signal to the Arduino, which turns a servo motor, opening the correct receptacle and closing the wrong one. Using the Notivize API, a message is sent when the can is full. </p>
-
+          <ul>
+          	<li> Created a voice activated waste sorter</li>
+          	<li> Used Google cloud speech API to parse voice commands</li>
+          	<li> Compared item to our database hosted in Azure and sorted item accordingly</li>
+          	<li> Arduino motor would open the correct bin and close the incorrect one depending on query result</li>
+          	<li> Used arduino sensor to determine when bin is full and used notivize API to send a text message to the owner</li>
+          </ul>
           <a href="https://github.com/rscinto/cruzhacks_project1" target="_blank">
             <i class="fa fa-github" style="font-size:48px;color:green"></i>
           </a>
-
         </div>
         <div class="column">
         	<iframe width="375" height="325" src="https://www.youtube.com/embed/5o3Pl6nHvSw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -198,7 +175,7 @@
   
 
 
-  <section id="project7">
+  <section id="project6" class="bg-light">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
